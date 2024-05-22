@@ -31,3 +31,11 @@ body {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
 }
+
+.width100 {
+    width: 100%;
+}
+
+.textCenter {
+    text-align: center;
+}

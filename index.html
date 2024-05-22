@@ -32,9 +32,20 @@
 
       <div class="container">
       <div class="card quizCard">
-
         <img src="img/img1.jpg" class="card-img-top">
-        <div class="card-body">
+
+
+
+        <div class="card-body" id="endScreen" style="display: none;">
+            <div class="textCenter">Finished!</div>
+
+            <div><img class="width100" src="img/trophy.png"></div>
+
+            <div class="textCenter">Result: <b id="rightAnswers">xxx</b> correct answers!!!</div>
+        </div>
+
+
+        <div class="card-body" id="questionBody">
 
           <h5 class="card-title" id="questionText"></h5>
 
@@ -58,9 +69,9 @@
           </div>
 
           <div class="questionFooter">
-            <span><b>1</b> of <b id="questionAmount"></b></span>
+            <span><b id="currentQuestionAmount"></b> of <b id="questionAmount"></b></span>
 
-            <button id="nextButton" class="btn btn-primary" disabled>Next Question</button>
+            <button id="nextButton" class="btn btn-primary" disabled onclick="nextQuestion()">Next Question</button>
           </div>
 
 
