@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script src="data.js"></script>
 
     <!-- Bootstrap files -->
     <link
@@ -22,6 +23,7 @@
     ></script>
   </head>
 
+  <body onload="init()">
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <span class="navbar-brand mb-0 h1">QuizApp</span>
@@ -30,43 +32,40 @@
 
       <div class="container">
       <div class="card quizCard">
+
         <img src="img/img1.jpg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Question</h5>
 
-          <div class="card mb-2">
-            <div class="card-body">
-              Answer
+          <h5 class="card-title" id="questionText"></h5>
+
+          <div class="card quizAnswerCard mb-2" onclick="answer('answer1')">
+            <div class="card-body" id="answer1">
             </div>
           </div>
 
-          <div class="card mb-2">
-            <div class="card-body">
-              Answer
+          <div class="card quizAnswerCard mb-2" onclick="answer('answer2')">
+            <div class="card-body" id="answer2">
             </div>
           </div>
 
-          <div class="card mb-2">
-            <div class="card-body">
-              Answer
+          <div class="card quizAnswerCard mb-2" onclick="answer('answer3')">
+            <div class="card-body" id="answer3">
             </div>
           </div>
-          <div class="card mb-2">
-            <div class="card-body">
-              Answer
+          <div class="card quizAnswerCard mb-2" onclick="answer('answer4')">
+            <div class="card-body" id="answer4">
             </div>
           </div>
 
           <div class="questionFooter">
-            <span><b>1</b> of <b>5</b></span>
+            <span><b>1</b> of <b id="questionAmount"></b></span>
 
-            <button class="btn btn-primary">Next Question</button>
+            <button id="nextButton" class="btn btn-primary" disabled>Next Question</button>
           </div>
 
 
         </div>
       </div>
     </div>
-
-  <body></body>
+</body>
 </html>
