@@ -7,14 +7,14 @@ let questions = [
         answer4: "Wrong3", 
         rightAnswer: 1
     },
-    // {
-    //     question: "Question Two",
-    //     answer1: "Wrong1",
-    //     answer2: "Right",
-    //     answer3: "Wrong2",
-    //     answer4: "Wrong3", 
-    //     rightAnswer: 2
-    // },
+    {
+        question: "Question Two",
+        answer1: "Wrong1",
+        answer2: "Right",
+        answer3: "Wrong2",
+        answer4: "Wrong3", 
+        rightAnswer: 2
+    },
     // {
     //     question: "Question Three",
     //     answer1: "Wrong1",

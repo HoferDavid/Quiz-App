@@ -39,3 +39,17 @@ body {
 .textCenter {
     text-align: center;
 }
+
+.endscreenHeadline {
+    font-size: 36px;
+}
+
+.progress {
+    border-radius: 0px !important;
+}
+
+.restartButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
